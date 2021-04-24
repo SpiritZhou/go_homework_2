@@ -15,6 +15,7 @@ func main() {
 	fmt.Println("User Name ", name);
 }
 
+
 func getUserNameDao(id int) (name string, err error) {
 	db, err := sql.Open("mysql", "root:1234567@tcp(172.17.0.3:3306)/homework")
 	
